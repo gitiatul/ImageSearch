@@ -72,7 +72,7 @@ function Home(){
         const secret=user.secret
         const url='https://farm'+farm+'.staticflickr.com/'+server+'/'+id+'_'+secret+'.jpg'
         return(
-          <div className="col col-md-4 col-sm-12 images" key={user.id}>
+          <div className="col col-md-4 col-xs-12 col-sm-6 col-lg-4 images" key={user.id}>
           <SRLWrapper options={options}>
           <a  href={url} ><img  src={url}  srl_gallery_image="true"  /></a>
           </SRLWrapper>
