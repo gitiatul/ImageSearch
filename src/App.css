@@ -1,0 +1,212 @@
+html,
+body {
+  height: 100%;
+  background-color: black;
+}
+
+.images{
+  transition: 1s;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.images img{
+  width:400px; 
+  height:400px;
+}
+
+.images:hover{
+  filter: grayscale(100%);
+  transform: scale(1.1);
+}
+
+.searchbox{
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+.searchbox input{
+  width: 1000px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  height: 50px;
+}
+
+.searchbox button{
+  width: 50px;
+  height: 50px;
+}
+
+.box{
+  margin-top: 200px;
+}
+
+.searchhistory{
+  background-color: white;
+  margin-left: 0px;
+  width: 1000px;
+  margin-top: -100px;
+}
+
+.scrolsearch{
+  background-color: white;
+  margin-left: 0px;
+  margin-top: -100px;
+  width: 1000px;
+  height: 150px;
+  box-shadow: rbga(0,0,0,0.35) 0px 5px 15px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.scrolsearch a{
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+}
+
+.scrolsearch a:hover{
+  color: red;
+}
+
+.scrollsearch::-webkit-scrollbar{
+  display: none;
+}
+
+.eachhistory{
+  padding: 10px;
+  font-size: 30px;
+  text-decoration: none;
+  list-style-type: none;
+  border-bottom: 1px solid black;
+ 
+}
+
+.searchhistory button{
+  padding-right:60px;
+  margin-left: 900px;
+  margin-bottom: 20px;
+}
+
+
+
+.popup{
+  position: fixed;
+  top:-150%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 1000px;
+  padding: 20px;
+}
+
+.popup-btn{
+  position: absolute;
+  bottom: -100000%;
+  right: 410px;
+  background-color: darkgray;
+  padding: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+  border-radius: 50px;
+  color:black;
+}
+
+.popup-active .popup{
+   top:50%;  
+}
+
+.popup-active .popup-overlay{
+  position: absolute;
+  top:0px;
+  left:0px;
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+}
+
+.popup-active .popup-btn{
+  bottom: -10%;  
+}
+
+
+.SRLThumbnailsButton{
+  visibility: hidden;
+}
+
+.SRLAutoplayButton{
+  visibility: hidden;
+}
+
+.css-1o906pp{
+  visibility: hidden;
+}
+
+.SRLNextButton {
+  visibility: hidden
+}
+.SRLPrevButton {
+  visibility: hidden
+}
+
+
+
+@media (max-width: 1000px) {
+
+    .searchbox input{
+      width: 200px;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      height: 50px;
+    }
+
+    .searchhistory{
+      background-color: white;
+      margin-left: 0px;
+      width: 150px;
+      margin-top: -100px;
+    }
+    
+    .scrolsearch {
+      background-color: white;
+      margin-left: 0px;
+      margin-top: -100px;
+      width: 187px;
+      height: 100px;
+      overflow: hidden;
+      overflow-y: auto;
+    }
+   
+    .eachhistory{
+      padding: 5px;
+      padding-top: 10px;
+      font-size: 20px;
+      margin-right: 50px;
+      text-decoration: none;
+      list-style-type: none;
+      border-bottom: 1px solid black;
+    }
+
+    .searchhistory button{
+      margin-top: 0px;
+      margin-left: 50px ;
+      
+    }
+
+    .images{
+      padding-top: 60px;
+    }
+
+    .images img{
+      width:200px; 
+      height:200px;
+    }
+    
+    
+    .images:hover{
+      filter: grayscale(100%);
+    }
+
+}
+
+
+
